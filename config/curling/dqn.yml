@@ -44,5 +44,5 @@ training:
   train_interval_steps: 1
   save_interval: 50
   log_interval: 1
-  checkpoint_path: "./checkpoints/curling"
-  log_path: "./logs/curling"
+  checkpoint_path: "./checkpoints/curling/dqn"
+  log_path: "./logs/curling/dqn"

@@ -83,14 +83,9 @@ class CurlingEnv(Env):
         """
         Update the speed of the stone based on the action taken.
         """
-        # acceleration = action / self.m
-        acceleration = np.array(action) / self.m
-        # Apply acceleration & air resistance
-        self.current_speed = tuple(
-            np.array(self.current_speed)
-            + acceleration * self.dt
-            - 0.005 * np.linalg.norm(self.current_speed) ** 2 * np.sign(self.current_speed) * self.dt
-        )
+        drag = -0.005 * np.linalg.norm(self.current_speed) * np.array(self.current_speed)
+        acceleration = (np.array(action) + drag) / self.m
+        self.current_speed = tuple(np.array(self.current_speed) + acceleration * self.dt)
 
     def _update_position(self) -> None:
         """
