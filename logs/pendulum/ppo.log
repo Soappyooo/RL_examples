@@ -1,0 +1,692 @@
+2025-04-05 01:34:27,610 - INFO - Current script path: d:\Projects\RL_course\homework1\train.py
+2025-04-05 01:34:29,290 - INFO - Starting on-policy training with config: {'env': {'name': 'Pendulum', 'm': 0.055, 'g': 9.81, 'l': 0.042, 'J': 0.000191, 'b': 3e-06, 'K': 0.0536, 'R': 9.5, 'max_voltage': 3, 'max_speed': 47.12388980384689, 'Ts': 0.005, 'max_steps': 500, 'initial_act_interval': 10, 'act_interval_decay': 0.993, 'final_act_interval': 1}, 'agent': {'name': 'PPO', 'gamma': 0.98, 'clip_ratio': 0.2, 'policy_lr': 0.0005, 'value_lr': 0.01, 'learning_rate_decay': 0.98, 'learning_rate_min': 5e-05, 'learning_rate_decay_steps': 10, 'input_dim': 2, 'output_dim': 3, 'hidden_dims': [128, 128], 'actions': [-3, 0, 3], 'gae_lambda': 0.95, 'entropy_coef': 0.001, 'value_coef': 1, 'ppo_epochs': 12, 'mini_batch_size': 64, 'device': 'cuda'}, 'training': {'mode': 'on-policy', 'seed': 1, 'num_episodes': 600, 'horizon': 4096, 'save_interval': 50, 'log_interval': 1, 'checkpoint_path': './checkpoints/pendulum/ppo', 'log_path': './logs/pendulum/ppo'}}
+2025-04-05 01:34:30,056 - INFO - Checkpoint save path: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430
+2025-04-05 01:34:30,056 - INFO - On-policy training started.
+2025-04-05 01:34:30,243 - INFO - Episode 1/600: Total Reward: -25.8984, Steps: 500, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,284 - INFO - Episode 2/600: Total Reward: -35.0002, Steps: 1000, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,325 - INFO - Episode 3/600: Total Reward: -29.8956, Steps: 1500, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,366 - INFO - Episode 4/600: Total Reward: -28.0531, Steps: 2000, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,406 - INFO - Episode 5/600: Total Reward: -22.3132, Steps: 2500, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,451 - INFO - Episode 6/600: Total Reward: -29.9410, Steps: 3000, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,491 - INFO - Episode 7/600: Total Reward: -30.4020, Steps: 3500, Act Interval: 10, LR: 0.000500 | 0.010000
+2025-04-05 01:34:30,534 - INFO - Episode 8/600: Total Reward: -33.3686, Steps: 4000, Act Interval: 9, LR: 0.000500 | 0.010000
+2025-04-05 01:34:33,274 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -26.8519, Loss: actor -0.0414, critic 0.0664
+2025-04-05 01:34:33,320 - INFO - Episode 9/600: Total Reward: -28.4714, Steps: 4596, Act Interval: 9, LR: 0.000500 | 0.010000
+2025-04-05 01:34:33,363 - INFO - Episode 10/600: Total Reward: -27.7115, Steps: 5096, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:33,415 - INFO - Episode 11/600: Total Reward: -27.9376, Steps: 5596, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:33,478 - INFO - Episode 12/600: Total Reward: -31.8983, Steps: 6096, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:33,523 - INFO - Episode 13/600: Total Reward: -28.6071, Steps: 6596, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:33,567 - INFO - Episode 14/600: Total Reward: -21.1441, Steps: 7096, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:33,626 - INFO - Episode 15/600: Total Reward: -27.4435, Steps: 7596, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:33,670 - INFO - Episode 16/600: Total Reward: -28.8129, Steps: 8096, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:36,974 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -25.3684, Loss: actor -0.0506, critic 0.0456
+2025-04-05 01:34:37,027 - INFO - Episode 17/600: Total Reward: -24.8705, Steps: 8692, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:37,073 - INFO - Episode 18/600: Total Reward: -30.5638, Steps: 9192, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:37,131 - INFO - Episode 19/600: Total Reward: -23.3965, Steps: 9692, Act Interval: 9, LR: 0.000490 | 0.009800
+2025-04-05 01:34:37,199 - INFO - Episode 20/600: Total Reward: -18.1820, Steps: 10192, Act Interval: 9, LR: 0.000480 | 0.009604
+2025-04-05 01:34:37,247 - INFO - Episode 21/600: Total Reward: -14.6945, Steps: 10692, Act Interval: 9, LR: 0.000480 | 0.009604
+2025-04-05 01:34:37,299 - INFO - Episode 22/600: Total Reward: -26.2356, Steps: 11192, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:37,353 - INFO - Episode 23/600: Total Reward: 0.1531, Steps: 11692, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:37,413 - INFO - Episode 24/600: Total Reward: -17.3300, Steps: 12192, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:40,620 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -17.9778, Loss: actor -0.0246, critic 0.0593
+2025-04-05 01:34:40,680 - INFO - Episode 25/600: Total Reward: -24.8768, Steps: 12788, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:40,738 - INFO - Episode 26/600: Total Reward: -4.0812, Steps: 13288, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:40,794 - INFO - Episode 27/600: Total Reward: -1.0843, Steps: 13788, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:40,854 - INFO - Episode 28/600: Total Reward: -19.5000, Steps: 14288, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:40,907 - INFO - Episode 29/600: Total Reward: -0.5979, Steps: 14788, Act Interval: 8, LR: 0.000480 | 0.009604
+2025-04-05 01:34:40,963 - INFO - Episode 30/600: Total Reward: -18.8452, Steps: 15288, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:41,028 - INFO - Episode 31/600: Total Reward: -30.1743, Steps: 15788, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:41,090 - INFO - Episode 32/600: Total Reward: -25.7157, Steps: 16288, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:43,886 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -14.5060, Loss: actor -0.0241, critic 0.0748
+2025-04-05 01:34:43,943 - INFO - Episode 33/600: Total Reward: -6.4950, Steps: 16884, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,008 - INFO - Episode 34/600: Total Reward: 3.7852, Steps: 17384, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,063 - INFO - Episode 35/600: Total Reward: -25.4023, Steps: 17884, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,120 - INFO - Episode 36/600: Total Reward: 6.1170, Steps: 18384, Act Interval: 8, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,180 - INFO - Episode 37/600: Total Reward: 18.6541, Steps: 18884, Act Interval: 7, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,249 - INFO - Episode 38/600: Total Reward: -6.1684, Steps: 19384, Act Interval: 7, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,314 - INFO - Episode 39/600: Total Reward: 4.7952, Steps: 19884, Act Interval: 7, LR: 0.000471 | 0.009412
+2025-04-05 01:34:44,381 - INFO - Episode 40/600: Total Reward: -29.5403, Steps: 20384, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,139 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -4.5520, Loss: actor -0.0098, critic 0.1020
+2025-04-05 01:34:47,211 - INFO - Episode 41/600: Total Reward: -5.2325, Steps: 20980, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,273 - INFO - Episode 42/600: Total Reward: -24.9535, Steps: 21480, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,340 - INFO - Episode 43/600: Total Reward: -10.7898, Steps: 21980, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,404 - INFO - Episode 44/600: Total Reward: -25.5603, Steps: 22480, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,467 - INFO - Episode 45/600: Total Reward: 2.0638, Steps: 22980, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,530 - INFO - Episode 46/600: Total Reward: 8.4421, Steps: 23480, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,593 - INFO - Episode 47/600: Total Reward: 1.7831, Steps: 23980, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:47,657 - INFO - Episode 48/600: Total Reward: 5.6882, Steps: 24480, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:50,698 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -6.0812, Loss: actor -0.0298, critic 0.1047
+2025-04-05 01:34:50,762 - INFO - Episode 49/600: Total Reward: -17.3710, Steps: 25076, Act Interval: 7, LR: 0.000461 | 0.009224
+2025-04-05 01:34:50,827 - INFO - Episode 50/600: Total Reward: 4.7009, Steps: 25576, Act Interval: 7, LR: 0.000452 | 0.009039
+2025-04-05 01:34:50,831 - INFO - Checkpoint saved at episode 50, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_50.pth
+2025-04-05 01:34:50,899 - INFO - Episode 51/600: Total Reward: 11.9183, Steps: 26076, Act Interval: 7, LR: 0.000452 | 0.009039
+2025-04-05 01:34:50,963 - INFO - Episode 52/600: Total Reward: 0.7327, Steps: 26576, Act Interval: 7, LR: 0.000452 | 0.009039
+2025-04-05 01:34:51,033 - INFO - Episode 53/600: Total Reward: -5.1184, Steps: 27076, Act Interval: 7, LR: 0.000452 | 0.009039
+2025-04-05 01:34:51,100 - INFO - Episode 54/600: Total Reward: 0.8538, Steps: 27576, Act Interval: 7, LR: 0.000452 | 0.009039
+2025-04-05 01:34:51,170 - INFO - Episode 55/600: Total Reward: 7.4650, Steps: 28076, Act Interval: 7, LR: 0.000452 | 0.009039
+2025-04-05 01:34:51,236 - INFO - Episode 56/600: Total Reward: -6.0580, Steps: 28576, Act Interval: 6, LR: 0.000452 | 0.009039
+2025-04-05 01:34:54,414 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -0.9067, Loss: actor -0.0223, critic 0.1332
+2025-04-05 01:34:54,488 - INFO - Episode 57/600: Total Reward: -0.6103, Steps: 29172, Act Interval: 6, LR: 0.000452 | 0.009039
+2025-04-05 01:34:54,564 - INFO - Episode 58/600: Total Reward: 4.9256, Steps: 29672, Act Interval: 6, LR: 0.000452 | 0.009039
+2025-04-05 01:34:54,637 - INFO - Episode 59/600: Total Reward: -2.9846, Steps: 30172, Act Interval: 6, LR: 0.000452 | 0.009039
+2025-04-05 01:34:54,709 - INFO - Episode 60/600: Total Reward: 9.5175, Steps: 30672, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:54,782 - INFO - Episode 61/600: Total Reward: 0.3841, Steps: 31172, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:54,855 - INFO - Episode 62/600: Total Reward: 8.6834, Steps: 31672, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:54,930 - INFO - Episode 63/600: Total Reward: 9.1637, Steps: 32172, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:55,004 - INFO - Episode 64/600: Total Reward: 16.1401, Steps: 32672, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:58,225 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 4.2794, Loss: actor -0.0133, critic 0.0713
+2025-04-05 01:34:58,298 - INFO - Episode 65/600: Total Reward: 10.8791, Steps: 33268, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:58,374 - INFO - Episode 66/600: Total Reward: 9.1122, Steps: 33768, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:58,448 - INFO - Episode 67/600: Total Reward: 11.8527, Steps: 34268, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:58,521 - INFO - Episode 68/600: Total Reward: 9.6385, Steps: 34768, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:58,592 - INFO - Episode 69/600: Total Reward: 12.6028, Steps: 35268, Act Interval: 6, LR: 0.000443 | 0.008858
+2025-04-05 01:34:58,669 - INFO - Episode 70/600: Total Reward: 4.2133, Steps: 35768, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:34:58,744 - INFO - Episode 71/600: Total Reward: 7.5689, Steps: 36268, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:34:58,816 - INFO - Episode 72/600: Total Reward: 5.9782, Steps: 36768, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,065 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 7.4151, Loss: actor -0.0068, critic 0.0791
+2025-04-05 01:35:02,147 - INFO - Episode 73/600: Total Reward: 15.7410, Steps: 37364, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,224 - INFO - Episode 74/600: Total Reward: 8.9550, Steps: 37864, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,307 - INFO - Episode 75/600: Total Reward: 8.6825, Steps: 38364, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,399 - INFO - Episode 76/600: Total Reward: 15.3079, Steps: 38864, Act Interval: 6, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,490 - INFO - Episode 77/600: Total Reward: 12.2078, Steps: 39364, Act Interval: 5, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,581 - INFO - Episode 78/600: Total Reward: 10.4000, Steps: 39864, Act Interval: 5, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,695 - INFO - Episode 79/600: Total Reward: 4.5843, Steps: 40364, Act Interval: 5, LR: 0.000434 | 0.008681
+2025-04-05 01:35:02,782 - INFO - Episode 80/600: Total Reward: 17.7302, Steps: 40864, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,283 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 9.7286, Loss: actor -0.0052, critic 0.0773
+2025-04-05 01:35:06,376 - INFO - Episode 81/600: Total Reward: 20.6084, Steps: 41460, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,478 - INFO - Episode 82/600: Total Reward: 4.0154, Steps: 41960, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,587 - INFO - Episode 83/600: Total Reward: 4.1135, Steps: 42460, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,691 - INFO - Episode 84/600: Total Reward: 12.3653, Steps: 42960, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,779 - INFO - Episode 85/600: Total Reward: 9.5676, Steps: 43460, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,875 - INFO - Episode 86/600: Total Reward: 20.7727, Steps: 43960, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:06,971 - INFO - Episode 87/600: Total Reward: 3.2876, Steps: 44460, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:07,085 - INFO - Episode 88/600: Total Reward: 12.0224, Steps: 44960, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:10,199 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 9.4003, Loss: actor -0.0146, critic 0.0633
+2025-04-05 01:35:10,285 - INFO - Episode 89/600: Total Reward: 15.1741, Steps: 45556, Act Interval: 5, LR: 0.000425 | 0.008508
+2025-04-05 01:35:10,380 - INFO - Episode 90/600: Total Reward: 18.9648, Steps: 46056, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:10,470 - INFO - Episode 91/600: Total Reward: 24.5553, Steps: 46556, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:10,557 - INFO - Episode 92/600: Total Reward: 23.2905, Steps: 47056, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:10,654 - INFO - Episode 93/600: Total Reward: 5.6494, Steps: 47556, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:10,740 - INFO - Episode 94/600: Total Reward: 20.3619, Steps: 48056, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:10,845 - INFO - Episode 95/600: Total Reward: 22.6465, Steps: 48556, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:10,944 - INFO - Episode 96/600: Total Reward: 21.3274, Steps: 49056, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:13,698 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 16.5427, Loss: actor -0.0024, critic 0.1755
+2025-04-05 01:35:13,783 - INFO - Episode 97/600: Total Reward: 23.1232, Steps: 49652, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:13,884 - INFO - Episode 98/600: Total Reward: 37.5650, Steps: 50152, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:13,968 - INFO - Episode 99/600: Total Reward: 22.6848, Steps: 50652, Act Interval: 5, LR: 0.000417 | 0.008337
+2025-04-05 01:35:14,054 - INFO - Episode 100/600: Total Reward: 22.0185, Steps: 51152, Act Interval: 5, LR: 0.000409 | 0.008171
+2025-04-05 01:35:14,058 - INFO - Checkpoint saved at episode 100, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_100.pth
+2025-04-05 01:35:14,161 - INFO - Episode 101/600: Total Reward: 31.2147, Steps: 51652, Act Interval: 5, LR: 0.000409 | 0.008171
+2025-04-05 01:35:14,268 - INFO - Episode 102/600: Total Reward: 26.8233, Steps: 52152, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:14,378 - INFO - Episode 103/600: Total Reward: 4.3247, Steps: 52652, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:14,484 - INFO - Episode 104/600: Total Reward: 25.5786, Steps: 53152, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:17,142 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 21.1662, Loss: actor 0.0040, critic 0.1239
+2025-04-05 01:35:17,248 - INFO - Episode 105/600: Total Reward: 32.6774, Steps: 53748, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:17,353 - INFO - Episode 106/600: Total Reward: -16.4661, Steps: 54248, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:17,465 - INFO - Episode 107/600: Total Reward: -16.2511, Steps: 54748, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:17,570 - INFO - Episode 108/600: Total Reward: 8.8900, Steps: 55248, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:17,682 - INFO - Episode 109/600: Total Reward: 25.0095, Steps: 55748, Act Interval: 4, LR: 0.000409 | 0.008171
+2025-04-05 01:35:17,785 - INFO - Episode 110/600: Total Reward: -16.2649, Steps: 56248, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:17,890 - INFO - Episode 111/600: Total Reward: -16.9291, Steps: 56748, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:17,996 - INFO - Episode 112/600: Total Reward: 3.5215, Steps: 57248, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:20,636 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 0.2263, Loss: actor -0.0041, critic 0.2477
+2025-04-05 01:35:20,742 - INFO - Episode 113/600: Total Reward: 32.6085, Steps: 57844, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:20,845 - INFO - Episode 114/600: Total Reward: 16.4560, Steps: 58344, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:20,950 - INFO - Episode 115/600: Total Reward: 32.9171, Steps: 58844, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:21,056 - INFO - Episode 116/600: Total Reward: 7.1026, Steps: 59344, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:21,161 - INFO - Episode 117/600: Total Reward: 1.9987, Steps: 59844, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:21,273 - INFO - Episode 118/600: Total Reward: 52.0419, Steps: 60344, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:21,388 - INFO - Episode 119/600: Total Reward: 40.7957, Steps: 60844, Act Interval: 4, LR: 0.000400 | 0.008007
+2025-04-05 01:35:21,493 - INFO - Episode 120/600: Total Reward: 28.8858, Steps: 61344, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,105 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 23.4050, Loss: actor -0.0260, critic 0.3834
+2025-04-05 01:35:24,214 - INFO - Episode 121/600: Total Reward: 37.5948, Steps: 61940, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,318 - INFO - Episode 122/600: Total Reward: 5.2535, Steps: 62440, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,424 - INFO - Episode 123/600: Total Reward: 20.8451, Steps: 62940, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,531 - INFO - Episode 124/600: Total Reward: 10.9201, Steps: 63440, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,637 - INFO - Episode 125/600: Total Reward: 12.2438, Steps: 63940, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,740 - INFO - Episode 126/600: Total Reward: 13.5797, Steps: 64440, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,844 - INFO - Episode 127/600: Total Reward: 4.0816, Steps: 64940, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:24,950 - INFO - Episode 128/600: Total Reward: 18.7238, Steps: 65440, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:27,760 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 13.4535, Loss: actor -0.0213, critic 0.2319
+2025-04-05 01:35:27,863 - INFO - Episode 129/600: Total Reward: 16.7035, Steps: 66036, Act Interval: 4, LR: 0.000392 | 0.007847
+2025-04-05 01:35:27,966 - INFO - Episode 130/600: Total Reward: 30.7759, Steps: 66536, Act Interval: 4, LR: 0.000385 | 0.007690
+2025-04-05 01:35:28,070 - INFO - Episode 131/600: Total Reward: 32.9126, Steps: 67036, Act Interval: 4, LR: 0.000385 | 0.007690
+2025-04-05 01:35:28,184 - INFO - Episode 132/600: Total Reward: 36.4849, Steps: 67536, Act Interval: 4, LR: 0.000385 | 0.007690
+2025-04-05 01:35:28,303 - INFO - Episode 133/600: Total Reward: 34.9409, Steps: 68036, Act Interval: 4, LR: 0.000385 | 0.007690
+2025-04-05 01:35:28,409 - INFO - Episode 134/600: Total Reward: 40.1080, Steps: 68536, Act Interval: 3, LR: 0.000385 | 0.007690
+2025-04-05 01:35:28,572 - INFO - Episode 135/600: Total Reward: 51.0594, Steps: 69036, Act Interval: 3, LR: 0.000385 | 0.007690
+2025-04-05 01:35:28,719 - INFO - Episode 136/600: Total Reward: 20.8768, Steps: 69536, Act Interval: 3, LR: 0.000385 | 0.007690
+2025-04-05 01:35:32,113 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 29.0791, Loss: actor 0.0027, critic 0.3867
+2025-04-05 01:35:32,301 - INFO - Episode 137/600: Total Reward: 50.8682, Steps: 70132, Act Interval: 3, LR: 0.000385 | 0.007690
+2025-04-05 01:35:32,484 - INFO - Episode 138/600: Total Reward: 33.4510, Steps: 70632, Act Interval: 3, LR: 0.000385 | 0.007690
+2025-04-05 01:35:32,631 - INFO - Episode 139/600: Total Reward: 42.2271, Steps: 71132, Act Interval: 3, LR: 0.000385 | 0.007690
+2025-04-05 01:35:32,789 - INFO - Episode 140/600: Total Reward: 29.5644, Steps: 71632, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:33,003 - INFO - Episode 141/600: Total Reward: 44.9643, Steps: 72132, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:33,160 - INFO - Episode 142/600: Total Reward: 46.5973, Steps: 72632, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:33,346 - INFO - Episode 143/600: Total Reward: 34.7151, Steps: 73132, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:33,496 - INFO - Episode 144/600: Total Reward: 49.7637, Steps: 73632, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:36,568 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 36.6668, Loss: actor 0.0068, critic 0.5392
+2025-04-05 01:35:36,710 - INFO - Episode 145/600: Total Reward: 55.5658, Steps: 74228, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:36,870 - INFO - Episode 146/600: Total Reward: 33.5470, Steps: 74728, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:37,019 - INFO - Episode 147/600: Total Reward: 31.6750, Steps: 75228, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:37,180 - INFO - Episode 148/600: Total Reward: 26.5739, Steps: 75728, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:37,339 - INFO - Episode 149/600: Total Reward: 31.5497, Steps: 76228, Act Interval: 3, LR: 0.000377 | 0.007536
+2025-04-05 01:35:37,492 - INFO - Episode 150/600: Total Reward: 42.7473, Steps: 76728, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:37,495 - INFO - Checkpoint saved at episode 150, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_150.pth
+2025-04-05 01:35:37,651 - INFO - Episode 151/600: Total Reward: 46.8333, Steps: 77228, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:37,792 - INFO - Episode 152/600: Total Reward: 31.5379, Steps: 77728, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:40,564 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 33.0040, Loss: actor 0.0075, critic 0.5753
+2025-04-05 01:35:40,705 - INFO - Episode 153/600: Total Reward: 60.2094, Steps: 78324, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:40,840 - INFO - Episode 154/600: Total Reward: 42.6322, Steps: 78824, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:40,985 - INFO - Episode 155/600: Total Reward: 59.4564, Steps: 79324, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:41,140 - INFO - Episode 156/600: Total Reward: 43.3101, Steps: 79824, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:41,293 - INFO - Episode 157/600: Total Reward: 45.3486, Steps: 80324, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:41,434 - INFO - Episode 158/600: Total Reward: 54.0557, Steps: 80824, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:41,572 - INFO - Episode 159/600: Total Reward: 46.2903, Steps: 81324, Act Interval: 3, LR: 0.000369 | 0.007386
+2025-04-05 01:35:41,718 - INFO - Episode 160/600: Total Reward: 11.8343, Steps: 81824, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:44,924 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 40.1097, Loss: actor -0.0100, critic 0.9539
+2025-04-05 01:35:45,063 - INFO - Episode 161/600: Total Reward: 44.2925, Steps: 82420, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:45,208 - INFO - Episode 162/600: Total Reward: 44.7749, Steps: 82920, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:45,349 - INFO - Episode 163/600: Total Reward: 58.6824, Steps: 83420, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:45,500 - INFO - Episode 164/600: Total Reward: 47.4284, Steps: 83920, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:45,639 - INFO - Episode 165/600: Total Reward: 56.5280, Steps: 84420, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:45,781 - INFO - Episode 166/600: Total Reward: 63.2027, Steps: 84920, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:45,922 - INFO - Episode 167/600: Total Reward: 54.4437, Steps: 85420, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:46,060 - INFO - Episode 168/600: Total Reward: 29.0944, Steps: 85920, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:49,042 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 44.0329, Loss: actor -0.0174, critic 0.6755
+2025-04-05 01:35:49,183 - INFO - Episode 169/600: Total Reward: 18.2557, Steps: 86516, Act Interval: 3, LR: 0.000362 | 0.007238
+2025-04-05 01:35:49,322 - INFO - Episode 170/600: Total Reward: 8.8097, Steps: 87016, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:49,460 - INFO - Episode 171/600: Total Reward: 36.2032, Steps: 87516, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:49,597 - INFO - Episode 172/600: Total Reward: 29.2333, Steps: 88016, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:49,737 - INFO - Episode 173/600: Total Reward: 35.3373, Steps: 88516, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:49,874 - INFO - Episode 174/600: Total Reward: 28.6207, Steps: 89016, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:50,012 - INFO - Episode 175/600: Total Reward: 35.6746, Steps: 89516, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:50,151 - INFO - Episode 176/600: Total Reward: 50.1348, Steps: 90016, Act Interval: 3, LR: 0.000355 | 0.007093
+2025-04-05 01:35:52,837 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 26.6775, Loss: actor -0.0241, critic 0.7594
+2025-04-05 01:35:53,042 - INFO - Episode 177/600: Total Reward: 19.6272, Steps: 90612, Act Interval: 2, LR: 0.000355 | 0.007093
+2025-04-05 01:35:53,267 - INFO - Episode 178/600: Total Reward: 69.3677, Steps: 91112, Act Interval: 2, LR: 0.000355 | 0.007093
+2025-04-05 01:35:53,476 - INFO - Episode 179/600: Total Reward: 71.8921, Steps: 91612, Act Interval: 2, LR: 0.000355 | 0.007093
+2025-04-05 01:35:53,689 - INFO - Episode 180/600: Total Reward: 70.3923, Steps: 92112, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:53,920 - INFO - Episode 181/600: Total Reward: 66.4901, Steps: 92612, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:54,173 - INFO - Episode 182/600: Total Reward: 57.7661, Steps: 93112, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:54,450 - INFO - Episode 183/600: Total Reward: 32.5971, Steps: 93612, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:54,669 - INFO - Episode 184/600: Total Reward: 67.1325, Steps: 94112, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:57,955 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 50.3461, Loss: actor -0.0130, critic 0.7955
+2025-04-05 01:35:58,160 - INFO - Episode 185/600: Total Reward: 76.9973, Steps: 94708, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:58,374 - INFO - Episode 186/600: Total Reward: 59.0507, Steps: 95208, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:58,604 - INFO - Episode 187/600: Total Reward: 18.4507, Steps: 95708, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:58,872 - INFO - Episode 188/600: Total Reward: 59.1231, Steps: 96208, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:59,150 - INFO - Episode 189/600: Total Reward: 56.9974, Steps: 96708, Act Interval: 2, LR: 0.000348 | 0.006951
+2025-04-05 01:35:59,388 - INFO - Episode 190/600: Total Reward: 70.8337, Steps: 97208, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:35:59,603 - INFO - Episode 191/600: Total Reward: 17.1566, Steps: 97708, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:35:59,898 - INFO - Episode 192/600: Total Reward: 65.6163, Steps: 98208, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:02,682 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 46.4390, Loss: actor -0.0048, critic 1.1430
+2025-04-05 01:36:02,927 - INFO - Episode 193/600: Total Reward: 21.8533, Steps: 98804, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:03,143 - INFO - Episode 194/600: Total Reward: 45.5960, Steps: 99304, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:03,374 - INFO - Episode 195/600: Total Reward: 26.4149, Steps: 99804, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:03,617 - INFO - Episode 196/600: Total Reward: 14.3870, Steps: 100304, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:03,851 - INFO - Episode 197/600: Total Reward: 17.5530, Steps: 100804, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:04,063 - INFO - Episode 198/600: Total Reward: 70.4565, Steps: 101304, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:04,299 - INFO - Episode 199/600: Total Reward: 83.1229, Steps: 101804, Act Interval: 2, LR: 0.000341 | 0.006812
+2025-04-05 01:36:04,512 - INFO - Episode 200/600: Total Reward: 55.8150, Steps: 102304, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:04,515 - INFO - Checkpoint saved at episode 200, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_200.pth
+2025-04-05 01:36:07,327 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 36.8999, Loss: actor -0.0138, critic 0.9902
+2025-04-05 01:36:07,527 - INFO - Episode 201/600: Total Reward: -31.8477, Steps: 102900, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:07,738 - INFO - Episode 202/600: Total Reward: -27.8963, Steps: 103400, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:07,939 - INFO - Episode 203/600: Total Reward: 2.8571, Steps: 103900, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:08,167 - INFO - Episode 204/600: Total Reward: -32.3606, Steps: 104400, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:08,368 - INFO - Episode 205/600: Total Reward: 20.3190, Steps: 104900, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:08,571 - INFO - Episode 206/600: Total Reward: -30.6936, Steps: 105400, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:08,774 - INFO - Episode 207/600: Total Reward: -30.7354, Steps: 105900, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:08,990 - INFO - Episode 208/600: Total Reward: -26.3347, Steps: 106400, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:11,937 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -18.1860, Loss: actor -0.0010, critic 0.3398
+2025-04-05 01:36:12,145 - INFO - Episode 209/600: Total Reward: -2.9624, Steps: 106996, Act Interval: 2, LR: 0.000334 | 0.006676
+2025-04-05 01:36:12,355 - INFO - Episode 210/600: Total Reward: 48.2061, Steps: 107496, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:12,570 - INFO - Episode 211/600: Total Reward: 55.1412, Steps: 107996, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:12,777 - INFO - Episode 212/600: Total Reward: 36.4036, Steps: 108496, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:12,987 - INFO - Episode 213/600: Total Reward: 15.6082, Steps: 108996, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:13,205 - INFO - Episode 214/600: Total Reward: 15.9848, Steps: 109496, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:13,422 - INFO - Episode 215/600: Total Reward: -26.8132, Steps: 109996, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:13,626 - INFO - Episode 216/600: Total Reward: 3.5383, Steps: 110496, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:16,835 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 15.3197, Loss: actor -0.0038, critic 1.1581
+2025-04-05 01:36:17,041 - INFO - Episode 217/600: Total Reward: -29.7076, Steps: 111092, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:17,262 - INFO - Episode 218/600: Total Reward: 5.4939, Steps: 111592, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:17,467 - INFO - Episode 219/600: Total Reward: -32.5012, Steps: 112092, Act Interval: 2, LR: 0.000327 | 0.006543
+2025-04-05 01:36:17,673 - INFO - Episode 220/600: Total Reward: -33.0481, Steps: 112592, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:17,880 - INFO - Episode 221/600: Total Reward: -17.1068, Steps: 113092, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:18,084 - INFO - Episode 222/600: Total Reward: -25.3390, Steps: 113592, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:18,290 - INFO - Episode 223/600: Total Reward: -30.0318, Steps: 114092, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:18,495 - INFO - Episode 224/600: Total Reward: 38.3120, Steps: 114592, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:21,918 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: -14.5363, Loss: actor -0.0061, critic 0.6329
+2025-04-05 01:36:22,136 - INFO - Episode 225/600: Total Reward: 10.0016, Steps: 115188, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:22,356 - INFO - Episode 226/600: Total Reward: -22.9411, Steps: 115688, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:22,591 - INFO - Episode 227/600: Total Reward: 4.0439, Steps: 116188, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:22,799 - INFO - Episode 228/600: Total Reward: 25.0827, Steps: 116688, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:23,030 - INFO - Episode 229/600: Total Reward: 6.3206, Steps: 117188, Act Interval: 2, LR: 0.000321 | 0.006412
+2025-04-05 01:36:23,264 - INFO - Episode 230/600: Total Reward: 31.3014, Steps: 117688, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:23,486 - INFO - Episode 231/600: Total Reward: -13.7004, Steps: 118188, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:23,696 - INFO - Episode 232/600: Total Reward: -5.3994, Steps: 118688, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:26,895 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 3.1599, Loss: actor -0.0089, critic 1.1065
+2025-04-05 01:36:27,132 - INFO - Episode 233/600: Total Reward: 1.2369, Steps: 119284, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:27,363 - INFO - Episode 234/600: Total Reward: 18.3604, Steps: 119784, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:27,576 - INFO - Episode 235/600: Total Reward: 38.2638, Steps: 120284, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:27,778 - INFO - Episode 236/600: Total Reward: -3.8453, Steps: 120784, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:27,982 - INFO - Episode 237/600: Total Reward: -25.0752, Steps: 121284, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:28,233 - INFO - Episode 238/600: Total Reward: 66.5623, Steps: 121784, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:28,445 - INFO - Episode 239/600: Total Reward: 36.3515, Steps: 122284, Act Interval: 2, LR: 0.000314 | 0.006283
+2025-04-05 01:36:28,668 - INFO - Episode 240/600: Total Reward: 26.1158, Steps: 122784, Act Interval: 2, LR: 0.000308 | 0.006158
+2025-04-05 01:36:31,865 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 16.8378, Loss: actor -0.0104, critic 1.2370
+2025-04-05 01:36:32,069 - INFO - Episode 241/600: Total Reward: 49.8539, Steps: 123380, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:32,496 - INFO - Episode 242/600: Total Reward: 52.7422, Steps: 123880, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:32,899 - INFO - Episode 243/600: Total Reward: 6.5349, Steps: 124380, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:33,313 - INFO - Episode 244/600: Total Reward: 75.4921, Steps: 124880, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:33,720 - INFO - Episode 245/600: Total Reward: 69.1828, Steps: 125380, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:34,121 - INFO - Episode 246/600: Total Reward: -32.7969, Steps: 125880, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:34,557 - INFO - Episode 247/600: Total Reward: 32.6546, Steps: 126380, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:34,980 - INFO - Episode 248/600: Total Reward: -31.3042, Steps: 126880, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:38,236 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 23.9486, Loss: actor -0.0071, critic 1.1159
+2025-04-05 01:36:38,641 - INFO - Episode 249/600: Total Reward: 81.2584, Steps: 127476, Act Interval: 1, LR: 0.000308 | 0.006158
+2025-04-05 01:36:39,056 - INFO - Episode 250/600: Total Reward: 76.8028, Steps: 127976, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:39,060 - INFO - Checkpoint saved at episode 250, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_250.pth
+2025-04-05 01:36:39,473 - INFO - Episode 251/600: Total Reward: 72.1226, Steps: 128476, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:39,885 - INFO - Episode 252/600: Total Reward: 68.1193, Steps: 128976, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:40,324 - INFO - Episode 253/600: Total Reward: 80.6123, Steps: 129476, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:40,734 - INFO - Episode 254/600: Total Reward: 87.9882, Steps: 129976, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:41,164 - INFO - Episode 255/600: Total Reward: 91.5738, Steps: 130476, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:41,567 - INFO - Episode 256/600: Total Reward: 73.9508, Steps: 130976, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:44,585 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 69.6168, Loss: actor -0.0041, critic 1.6580
+2025-04-05 01:36:45,060 - INFO - Episode 257/600: Total Reward: 90.5372, Steps: 131572, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:45,568 - INFO - Episode 258/600: Total Reward: 84.8558, Steps: 132072, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:46,064 - INFO - Episode 259/600: Total Reward: 90.0539, Steps: 132572, Act Interval: 1, LR: 0.000302 | 0.006035
+2025-04-05 01:36:46,596 - INFO - Episode 260/600: Total Reward: 90.7393, Steps: 133072, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:47,033 - INFO - Episode 261/600: Total Reward: 89.8722, Steps: 133572, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:47,520 - INFO - Episode 262/600: Total Reward: 89.9781, Steps: 134072, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:47,992 - INFO - Episode 263/600: Total Reward: 85.8856, Steps: 134572, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:48,462 - INFO - Episode 264/600: Total Reward: 84.7554, Steps: 135072, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:51,233 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 77.9069, Loss: actor -0.0048, critic 1.8044
+2025-04-05 01:36:51,720 - INFO - Episode 265/600: Total Reward: 97.9022, Steps: 135668, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:52,165 - INFO - Episode 266/600: Total Reward: 91.2046, Steps: 136168, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:52,566 - INFO - Episode 267/600: Total Reward: 87.5570, Steps: 136668, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:53,006 - INFO - Episode 268/600: Total Reward: 93.6896, Steps: 137168, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:53,465 - INFO - Episode 269/600: Total Reward: 87.0619, Steps: 137668, Act Interval: 1, LR: 0.000296 | 0.005914
+2025-04-05 01:36:53,908 - INFO - Episode 270/600: Total Reward: 94.7079, Steps: 138168, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:54,342 - INFO - Episode 271/600: Total Reward: 95.2451, Steps: 138668, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:54,752 - INFO - Episode 272/600: Total Reward: 94.1471, Steps: 139168, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:57,445 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 81.7085, Loss: actor -0.0039, critic 1.8856
+2025-04-05 01:36:57,852 - INFO - Episode 273/600: Total Reward: 93.3328, Steps: 139764, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:58,260 - INFO - Episode 274/600: Total Reward: 94.4949, Steps: 140264, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:58,687 - INFO - Episode 275/600: Total Reward: 70.6849, Steps: 140764, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:59,099 - INFO - Episode 276/600: Total Reward: 97.1088, Steps: 141264, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:59,520 - INFO - Episode 277/600: Total Reward: 92.7588, Steps: 141764, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:36:59,929 - INFO - Episode 278/600: Total Reward: 92.7938, Steps: 142264, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:37:00,354 - INFO - Episode 279/600: Total Reward: 93.0201, Steps: 142764, Act Interval: 1, LR: 0.000290 | 0.005796
+2025-04-05 01:37:00,758 - INFO - Episode 280/600: Total Reward: 93.7631, Steps: 143264, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:03,447 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 80.2369, Loss: actor -0.0012, critic 1.9616
+2025-04-05 01:37:03,881 - INFO - Episode 281/600: Total Reward: 94.0954, Steps: 143860, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:04,294 - INFO - Episode 282/600: Total Reward: 85.4817, Steps: 144360, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:04,697 - INFO - Episode 283/600: Total Reward: 95.9849, Steps: 144860, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:05,113 - INFO - Episode 284/600: Total Reward: 91.1072, Steps: 145360, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:05,612 - INFO - Episode 285/600: Total Reward: 100.6228, Steps: 145860, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:06,119 - INFO - Episode 286/600: Total Reward: 93.1404, Steps: 146360, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:06,531 - INFO - Episode 287/600: Total Reward: 96.4812, Steps: 146860, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:06,997 - INFO - Episode 288/600: Total Reward: 92.6660, Steps: 147360, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:10,205 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 82.7173, Loss: actor -0.0015, critic 1.9226
+2025-04-05 01:37:10,696 - INFO - Episode 289/600: Total Reward: 98.3156, Steps: 147956, Act Interval: 1, LR: 0.000284 | 0.005680
+2025-04-05 01:37:11,154 - INFO - Episode 290/600: Total Reward: 100.1352, Steps: 148456, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:11,610 - INFO - Episode 291/600: Total Reward: 94.5705, Steps: 148956, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:12,039 - INFO - Episode 292/600: Total Reward: 97.2240, Steps: 149456, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:12,501 - INFO - Episode 293/600: Total Reward: 100.3752, Steps: 149956, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:12,941 - INFO - Episode 294/600: Total Reward: 92.2904, Steps: 150456, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:13,369 - INFO - Episode 295/600: Total Reward: 97.5607, Steps: 150956, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:13,807 - INFO - Episode 296/600: Total Reward: 98.6884, Steps: 151456, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:16,725 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 85.9416, Loss: actor -0.0027, critic 1.9730
+2025-04-05 01:37:17,141 - INFO - Episode 297/600: Total Reward: 101.7904, Steps: 152052, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:17,547 - INFO - Episode 298/600: Total Reward: 97.7059, Steps: 152552, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:17,960 - INFO - Episode 299/600: Total Reward: 95.4598, Steps: 153052, Act Interval: 1, LR: 0.000278 | 0.005566
+2025-04-05 01:37:18,389 - INFO - Episode 300/600: Total Reward: 93.7334, Steps: 153552, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:18,403 - INFO - Checkpoint saved at episode 300, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_300.pth
+2025-04-05 01:37:18,816 - INFO - Episode 301/600: Total Reward: 94.8674, Steps: 154052, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:19,228 - INFO - Episode 302/600: Total Reward: 93.2095, Steps: 154552, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:19,627 - INFO - Episode 303/600: Total Reward: 89.1610, Steps: 155052, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:20,040 - INFO - Episode 304/600: Total Reward: 93.5916, Steps: 155552, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:23,131 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 83.8711, Loss: actor -0.0043, critic 1.9477
+2025-04-05 01:37:23,553 - INFO - Episode 305/600: Total Reward: 97.8827, Steps: 156148, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:23,968 - INFO - Episode 306/600: Total Reward: 95.8548, Steps: 156648, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:24,407 - INFO - Episode 307/600: Total Reward: 99.9428, Steps: 157148, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:24,835 - INFO - Episode 308/600: Total Reward: 98.3509, Steps: 157648, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:25,255 - INFO - Episode 309/600: Total Reward: 95.3077, Steps: 158148, Act Interval: 1, LR: 0.000273 | 0.005455
+2025-04-05 01:37:25,655 - INFO - Episode 310/600: Total Reward: 99.8502, Steps: 158648, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:26,083 - INFO - Episode 311/600: Total Reward: 101.0147, Steps: 159148, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:26,496 - INFO - Episode 312/600: Total Reward: 96.6362, Steps: 159648, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:29,773 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 86.6529, Loss: actor -0.0010, critic 1.9909
+2025-04-05 01:37:30,264 - INFO - Episode 313/600: Total Reward: 103.4066, Steps: 160244, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:30,717 - INFO - Episode 314/600: Total Reward: 99.4412, Steps: 160744, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:31,213 - INFO - Episode 315/600: Total Reward: 101.6319, Steps: 161244, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:31,750 - INFO - Episode 316/600: Total Reward: 100.2780, Steps: 161744, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:32,212 - INFO - Episode 317/600: Total Reward: 102.7560, Steps: 162244, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:32,669 - INFO - Episode 318/600: Total Reward: 98.0150, Steps: 162744, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:33,101 - INFO - Episode 319/600: Total Reward: 100.5319, Steps: 163244, Act Interval: 1, LR: 0.000267 | 0.005346
+2025-04-05 01:37:33,574 - INFO - Episode 320/600: Total Reward: 100.8303, Steps: 163744, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:36,472 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 89.1811, Loss: actor -0.0042, critic 2.0701
+2025-04-05 01:37:36,902 - INFO - Episode 321/600: Total Reward: 102.5176, Steps: 164340, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:37,326 - INFO - Episode 322/600: Total Reward: 5.0344, Steps: 164840, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:37,779 - INFO - Episode 323/600: Total Reward: 103.1658, Steps: 165340, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:38,215 - INFO - Episode 324/600: Total Reward: 34.5618, Steps: 165840, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:38,680 - INFO - Episode 325/600: Total Reward: 15.4795, Steps: 166340, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:39,098 - INFO - Episode 326/600: Total Reward: 4.8199, Steps: 166840, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:39,557 - INFO - Episode 327/600: Total Reward: 11.6234, Steps: 167340, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:39,960 - INFO - Episode 328/600: Total Reward: 104.0683, Steps: 167840, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:43,197 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 41.8474, Loss: actor -0.0069, critic 1.3750
+2025-04-05 01:37:43,618 - INFO - Episode 329/600: Total Reward: 99.0276, Steps: 168436, Act Interval: 1, LR: 0.000262 | 0.005239
+2025-04-05 01:37:44,042 - INFO - Episode 330/600: Total Reward: 98.2891, Steps: 168936, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:44,492 - INFO - Episode 331/600: Total Reward: 101.9844, Steps: 169436, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:44,893 - INFO - Episode 332/600: Total Reward: 101.3842, Steps: 169936, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:45,313 - INFO - Episode 333/600: Total Reward: 103.1057, Steps: 170436, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:45,717 - INFO - Episode 334/600: Total Reward: 100.8674, Steps: 170936, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:46,123 - INFO - Episode 335/600: Total Reward: 101.5467, Steps: 171436, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:46,520 - INFO - Episode 336/600: Total Reward: 100.7947, Steps: 171936, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:49,263 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 89.3026, Loss: actor -0.0009, critic 2.1892
+2025-04-05 01:37:49,666 - INFO - Episode 337/600: Total Reward: 97.5460, Steps: 172532, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:50,096 - INFO - Episode 338/600: Total Reward: 100.8665, Steps: 173032, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:50,498 - INFO - Episode 339/600: Total Reward: 101.4657, Steps: 173532, Act Interval: 1, LR: 0.000257 | 0.005134
+2025-04-05 01:37:50,970 - INFO - Episode 340/600: Total Reward: 3.8730, Steps: 174032, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:51,430 - INFO - Episode 341/600: Total Reward: 100.8845, Steps: 174532, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:51,863 - INFO - Episode 342/600: Total Reward: 101.4642, Steps: 175032, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:52,369 - INFO - Episode 343/600: Total Reward: 100.2852, Steps: 175532, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:52,825 - INFO - Episode 344/600: Total Reward: 98.4374, Steps: 176032, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:56,104 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 77.9058, Loss: actor -0.0019, critic 1.9352
+2025-04-05 01:37:56,576 - INFO - Episode 345/600: Total Reward: 102.9633, Steps: 176628, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:57,004 - INFO - Episode 346/600: Total Reward: 6.5721, Steps: 177128, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:57,412 - INFO - Episode 347/600: Total Reward: 5.2703, Steps: 177628, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:57,838 - INFO - Episode 348/600: Total Reward: 5.9605, Steps: 178128, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:58,277 - INFO - Episode 349/600: Total Reward: 101.9656, Steps: 178628, Act Interval: 1, LR: 0.000252 | 0.005031
+2025-04-05 01:37:58,706 - INFO - Episode 350/600: Total Reward: 103.3474, Steps: 179128, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:37:58,710 - INFO - Checkpoint saved at episode 350, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_350.pth
+2025-04-05 01:37:59,140 - INFO - Episode 351/600: Total Reward: 104.7012, Steps: 179628, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:37:59,552 - INFO - Episode 352/600: Total Reward: 104.2422, Steps: 180128, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:02,405 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 59.1968, Loss: actor -0.0015, critic 1.4450
+2025-04-05 01:38:02,808 - INFO - Episode 353/600: Total Reward: 104.5460, Steps: 180724, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:03,213 - INFO - Episode 354/600: Total Reward: 105.2073, Steps: 181224, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:03,622 - INFO - Episode 355/600: Total Reward: 102.0349, Steps: 181724, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:04,050 - INFO - Episode 356/600: Total Reward: 7.2224, Steps: 182224, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:04,462 - INFO - Episode 357/600: Total Reward: 101.7737, Steps: 182724, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:04,871 - INFO - Episode 358/600: Total Reward: 5.4624, Steps: 183224, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:05,293 - INFO - Episode 359/600: Total Reward: 101.1264, Steps: 183724, Act Interval: 1, LR: 0.000247 | 0.004931
+2025-04-05 01:38:05,726 - INFO - Episode 360/600: Total Reward: 100.7987, Steps: 184224, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:08,562 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 69.5569, Loss: actor -0.0026, critic 1.6889
+2025-04-05 01:38:08,964 - INFO - Episode 361/600: Total Reward: 85.7701, Steps: 184820, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:09,384 - INFO - Episode 362/600: Total Reward: 89.4516, Steps: 185320, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:09,790 - INFO - Episode 363/600: Total Reward: 100.2352, Steps: 185820, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:10,212 - INFO - Episode 364/600: Total Reward: 88.7802, Steps: 186320, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:10,617 - INFO - Episode 365/600: Total Reward: 86.6002, Steps: 186820, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:11,033 - INFO - Episode 366/600: Total Reward: 87.4068, Steps: 187320, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:11,465 - INFO - Episode 367/600: Total Reward: 87.6680, Steps: 187820, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:11,871 - INFO - Episode 368/600: Total Reward: 101.2140, Steps: 188320, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:15,026 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 80.5523, Loss: actor -0.0025, critic 2.2894
+2025-04-05 01:38:15,530 - INFO - Episode 369/600: Total Reward: 101.5006, Steps: 188916, Act Interval: 1, LR: 0.000242 | 0.004832
+2025-04-05 01:38:15,987 - INFO - Episode 370/600: Total Reward: 87.9195, Steps: 189416, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:16,493 - INFO - Episode 371/600: Total Reward: 95.7894, Steps: 189916, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:16,913 - INFO - Episode 372/600: Total Reward: 99.1636, Steps: 190416, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:17,413 - INFO - Episode 373/600: Total Reward: 100.0630, Steps: 190916, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:17,899 - INFO - Episode 374/600: Total Reward: 87.1264, Steps: 191416, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:18,355 - INFO - Episode 375/600: Total Reward: 101.3083, Steps: 191916, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:18,839 - INFO - Episode 376/600: Total Reward: 88.2788, Steps: 192416, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:21,935 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 84.2057, Loss: actor -0.0005, critic 2.1937
+2025-04-05 01:38:22,345 - INFO - Episode 377/600: Total Reward: 98.8956, Steps: 193012, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:22,757 - INFO - Episode 378/600: Total Reward: 99.9260, Steps: 193512, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:23,210 - INFO - Episode 379/600: Total Reward: 102.1020, Steps: 194012, Act Interval: 1, LR: 0.000237 | 0.004735
+2025-04-05 01:38:23,618 - INFO - Episode 380/600: Total Reward: 104.0075, Steps: 194512, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:24,064 - INFO - Episode 381/600: Total Reward: 100.8407, Steps: 195012, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:24,526 - INFO - Episode 382/600: Total Reward: 102.6029, Steps: 195512, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:24,963 - INFO - Episode 383/600: Total Reward: 100.5648, Steps: 196012, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:25,400 - INFO - Episode 384/600: Total Reward: 102.2500, Steps: 196512, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:28,637 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 89.8252, Loss: actor -0.0028, critic 2.1583
+2025-04-05 01:38:29,045 - INFO - Episode 385/600: Total Reward: 101.9250, Steps: 197108, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:29,468 - INFO - Episode 386/600: Total Reward: 103.1657, Steps: 197608, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:29,895 - INFO - Episode 387/600: Total Reward: 104.2456, Steps: 198108, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:30,317 - INFO - Episode 388/600: Total Reward: 103.3452, Steps: 198608, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:30,746 - INFO - Episode 389/600: Total Reward: 101.4259, Steps: 199108, Act Interval: 1, LR: 0.000232 | 0.004641
+2025-04-05 01:38:31,178 - INFO - Episode 390/600: Total Reward: 103.6671, Steps: 199608, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:31,583 - INFO - Episode 391/600: Total Reward: 101.7576, Steps: 200108, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:32,000 - INFO - Episode 392/600: Total Reward: 104.1990, Steps: 200608, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:35,173 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 91.1371, Loss: actor -0.0023, critic 2.2411
+2025-04-05 01:38:35,578 - INFO - Episode 393/600: Total Reward: 101.6716, Steps: 201204, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:35,976 - INFO - Episode 394/600: Total Reward: 5.7968, Steps: 201704, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:36,392 - INFO - Episode 395/600: Total Reward: 98.0121, Steps: 202204, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:36,848 - INFO - Episode 396/600: Total Reward: 103.5145, Steps: 202704, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:37,344 - INFO - Episode 397/600: Total Reward: 102.5651, Steps: 203204, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:37,788 - INFO - Episode 398/600: Total Reward: 100.2646, Steps: 203704, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:38,249 - INFO - Episode 399/600: Total Reward: 99.4797, Steps: 204204, Act Interval: 1, LR: 0.000227 | 0.004548
+2025-04-05 01:38:38,693 - INFO - Episode 400/600: Total Reward: 100.0186, Steps: 204704, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:38,698 - INFO - Checkpoint saved at episode 400, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_400.pth
+2025-04-05 01:38:42,136 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 78.6476, Loss: actor -0.0107, critic 2.0884
+2025-04-05 01:38:42,594 - INFO - Episode 401/600: Total Reward: 100.8925, Steps: 205300, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:43,100 - INFO - Episode 402/600: Total Reward: 98.1419, Steps: 205800, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:43,532 - INFO - Episode 403/600: Total Reward: 97.7348, Steps: 206300, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:43,975 - INFO - Episode 404/600: Total Reward: 98.6432, Steps: 206800, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:44,413 - INFO - Episode 405/600: Total Reward: 100.9117, Steps: 207300, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:44,877 - INFO - Episode 406/600: Total Reward: 97.3837, Steps: 207800, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:45,330 - INFO - Episode 407/600: Total Reward: 100.2000, Steps: 208300, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:45,797 - INFO - Episode 408/600: Total Reward: 96.9775, Steps: 208800, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:48,963 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 87.5492, Loss: actor -0.0019, critic 2.2844
+2025-04-05 01:38:49,373 - INFO - Episode 409/600: Total Reward: 95.5325, Steps: 209396, Act Interval: 1, LR: 0.000223 | 0.004457
+2025-04-05 01:38:49,810 - INFO - Episode 410/600: Total Reward: 97.0255, Steps: 209896, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:50,250 - INFO - Episode 411/600: Total Reward: 79.3317, Steps: 210396, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:50,651 - INFO - Episode 412/600: Total Reward: 96.4204, Steps: 210896, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:51,059 - INFO - Episode 413/600: Total Reward: 96.7777, Steps: 211396, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:51,458 - INFO - Episode 414/600: Total Reward: 76.6823, Steps: 211896, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:51,860 - INFO - Episode 415/600: Total Reward: 96.0487, Steps: 212396, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:52,275 - INFO - Episode 416/600: Total Reward: 96.1996, Steps: 212896, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:55,219 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 81.2273, Loss: actor -0.0043, critic 2.2126
+2025-04-05 01:38:55,610 - INFO - Episode 417/600: Total Reward: 95.5954, Steps: 213492, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:56,020 - INFO - Episode 418/600: Total Reward: 94.6402, Steps: 213992, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:56,421 - INFO - Episode 419/600: Total Reward: 94.3322, Steps: 214492, Act Interval: 1, LR: 0.000218 | 0.004368
+2025-04-05 01:38:56,817 - INFO - Episode 420/600: Total Reward: 99.2043, Steps: 214992, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:38:57,230 - INFO - Episode 421/600: Total Reward: 93.7057, Steps: 215492, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:38:57,653 - INFO - Episode 422/600: Total Reward: 94.4419, Steps: 215992, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:38:58,066 - INFO - Episode 423/600: Total Reward: 97.1195, Steps: 216492, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:38:58,490 - INFO - Episode 424/600: Total Reward: 92.7483, Steps: 216992, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:39:01,493 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 84.2661, Loss: actor -0.0015, critic 2.1973
+2025-04-05 01:39:02,030 - INFO - Episode 425/600: Total Reward: 83.7981, Steps: 217588, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:39:02,485 - INFO - Episode 426/600: Total Reward: 90.4690, Steps: 218088, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:39:02,940 - INFO - Episode 427/600: Total Reward: 87.3441, Steps: 218588, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:39:03,431 - INFO - Episode 428/600: Total Reward: 88.4862, Steps: 219088, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:39:03,900 - INFO - Episode 429/600: Total Reward: 92.9261, Steps: 219588, Act Interval: 1, LR: 0.000214 | 0.004281
+2025-04-05 01:39:04,411 - INFO - Episode 430/600: Total Reward: 90.8615, Steps: 220088, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:04,836 - INFO - Episode 431/600: Total Reward: 89.0258, Steps: 220588, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:05,296 - INFO - Episode 432/600: Total Reward: 88.3580, Steps: 221088, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:08,110 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 78.6849, Loss: actor -0.0023, critic 1.9647
+2025-04-05 01:39:08,579 - INFO - Episode 433/600: Total Reward: 91.7192, Steps: 221684, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:09,046 - INFO - Episode 434/600: Total Reward: 93.5821, Steps: 222184, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:09,487 - INFO - Episode 435/600: Total Reward: 95.6874, Steps: 222684, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:09,898 - INFO - Episode 436/600: Total Reward: 94.5549, Steps: 223184, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:10,319 - INFO - Episode 437/600: Total Reward: 93.4158, Steps: 223684, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:10,746 - INFO - Episode 438/600: Total Reward: 91.6345, Steps: 224184, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:11,179 - INFO - Episode 439/600: Total Reward: 93.5118, Steps: 224684, Act Interval: 1, LR: 0.000210 | 0.004195
+2025-04-05 01:39:11,590 - INFO - Episode 440/600: Total Reward: 95.8444, Steps: 225184, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:14,256 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 82.9473, Loss: actor -0.0025, critic 2.0263
+2025-04-05 01:39:14,650 - INFO - Episode 441/600: Total Reward: 83.5459, Steps: 225780, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:15,047 - INFO - Episode 442/600: Total Reward: 93.4232, Steps: 226280, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:15,461 - INFO - Episode 443/600: Total Reward: 95.7102, Steps: 226780, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:15,869 - INFO - Episode 444/600: Total Reward: 92.5716, Steps: 227280, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:16,271 - INFO - Episode 445/600: Total Reward: 8.4493, Steps: 227780, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:16,674 - INFO - Episode 446/600: Total Reward: 96.9977, Steps: 228280, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:17,085 - INFO - Episode 447/600: Total Reward: 94.7664, Steps: 228780, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:17,501 - INFO - Episode 448/600: Total Reward: 94.8735, Steps: 229280, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:20,194 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 72.9875, Loss: actor -0.0029, critic 1.7494
+2025-04-05 01:39:20,586 - INFO - Episode 449/600: Total Reward: 98.2663, Steps: 229876, Act Interval: 1, LR: 0.000206 | 0.004111
+2025-04-05 01:39:20,988 - INFO - Episode 450/600: Total Reward: 97.7784, Steps: 230376, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:20,991 - INFO - Checkpoint saved at episode 450, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_450.pth
+2025-04-05 01:39:21,420 - INFO - Episode 451/600: Total Reward: 91.8137, Steps: 230876, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:21,830 - INFO - Episode 452/600: Total Reward: 86.6265, Steps: 231376, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:22,325 - INFO - Episode 453/600: Total Reward: 93.1760, Steps: 231876, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:22,834 - INFO - Episode 454/600: Total Reward: 97.6797, Steps: 232376, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:23,289 - INFO - Episode 455/600: Total Reward: 85.6084, Steps: 232876, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:23,724 - INFO - Episode 456/600: Total Reward: 104.8518, Steps: 233376, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:26,998 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 83.6097, Loss: actor -0.0067, critic 1.9713
+2025-04-05 01:39:27,473 - INFO - Episode 457/600: Total Reward: 102.7635, Steps: 233972, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:28,008 - INFO - Episode 458/600: Total Reward: 104.7545, Steps: 234472, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:28,475 - INFO - Episode 459/600: Total Reward: 103.0680, Steps: 234972, Act Interval: 1, LR: 0.000201 | 0.004029
+2025-04-05 01:39:28,930 - INFO - Episode 460/600: Total Reward: 100.5199, Steps: 235472, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:29,365 - INFO - Episode 461/600: Total Reward: 100.2608, Steps: 235972, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:29,801 - INFO - Episode 462/600: Total Reward: 96.8046, Steps: 236472, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:30,238 - INFO - Episode 463/600: Total Reward: 103.1405, Steps: 236972, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:30,712 - INFO - Episode 464/600: Total Reward: 102.5135, Steps: 237472, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:33,582 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 90.0730, Loss: actor -0.0026, critic 2.1717
+2025-04-05 01:39:34,000 - INFO - Episode 465/600: Total Reward: 104.9073, Steps: 238068, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:34,427 - INFO - Episode 466/600: Total Reward: 104.4549, Steps: 238568, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:34,850 - INFO - Episode 467/600: Total Reward: 101.8784, Steps: 239068, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:35,257 - INFO - Episode 468/600: Total Reward: 104.8638, Steps: 239568, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:35,696 - INFO - Episode 469/600: Total Reward: 105.8223, Steps: 240068, Act Interval: 1, LR: 0.000197 | 0.003948
+2025-04-05 01:39:36,112 - INFO - Episode 470/600: Total Reward: 103.3171, Steps: 240568, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:36,520 - INFO - Episode 471/600: Total Reward: 105.0805, Steps: 241068, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:36,916 - INFO - Episode 472/600: Total Reward: 101.8826, Steps: 241568, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:40,087 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 92.1132, Loss: actor -0.0024, critic 2.2204
+2025-04-05 01:39:40,503 - INFO - Episode 473/600: Total Reward: 92.3661, Steps: 242164, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:40,926 - INFO - Episode 474/600: Total Reward: 105.0353, Steps: 242664, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:41,354 - INFO - Episode 475/600: Total Reward: 103.2823, Steps: 243164, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:41,764 - INFO - Episode 476/600: Total Reward: 103.3912, Steps: 243664, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:42,168 - INFO - Episode 477/600: Total Reward: 103.7130, Steps: 244164, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:42,572 - INFO - Episode 478/600: Total Reward: 103.2452, Steps: 244664, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:42,979 - INFO - Episode 479/600: Total Reward: 102.8023, Steps: 245164, Act Interval: 1, LR: 0.000193 | 0.003869
+2025-04-05 01:39:43,391 - INFO - Episode 480/600: Total Reward: 103.4525, Steps: 245664, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:46,640 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 90.4089, Loss: actor -0.0019, critic 2.2364
+2025-04-05 01:39:47,091 - INFO - Episode 481/600: Total Reward: 104.0175, Steps: 246260, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:47,543 - INFO - Episode 482/600: Total Reward: 92.0501, Steps: 246760, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:48,012 - INFO - Episode 483/600: Total Reward: 94.0107, Steps: 247260, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:48,477 - INFO - Episode 484/600: Total Reward: 103.4090, Steps: 247760, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:48,921 - INFO - Episode 485/600: Total Reward: 102.9658, Steps: 248260, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:49,426 - INFO - Episode 486/600: Total Reward: 103.6160, Steps: 248760, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:49,897 - INFO - Episode 487/600: Total Reward: 103.9324, Steps: 249260, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:50,403 - INFO - Episode 488/600: Total Reward: 104.5459, Steps: 249760, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:53,339 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 89.4349, Loss: actor -0.0022, critic 2.2351
+2025-04-05 01:39:53,758 - INFO - Episode 489/600: Total Reward: 105.2963, Steps: 250356, Act Interval: 1, LR: 0.000190 | 0.003792
+2025-04-05 01:39:54,170 - INFO - Episode 490/600: Total Reward: 105.7317, Steps: 250856, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:54,616 - INFO - Episode 491/600: Total Reward: 104.7766, Steps: 251356, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:55,073 - INFO - Episode 492/600: Total Reward: 103.2758, Steps: 251856, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:55,512 - INFO - Episode 493/600: Total Reward: 101.5906, Steps: 252356, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:55,971 - INFO - Episode 494/600: Total Reward: 105.8462, Steps: 252856, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:56,393 - INFO - Episode 495/600: Total Reward: 105.1035, Steps: 253356, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:56,789 - INFO - Episode 496/600: Total Reward: 105.6204, Steps: 253856, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:39:59,815 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 92.6126, Loss: actor -0.0034, critic 2.2111
+2025-04-05 01:40:00,243 - INFO - Episode 497/600: Total Reward: 92.9156, Steps: 254452, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:40:00,648 - INFO - Episode 498/600: Total Reward: 103.5717, Steps: 254952, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:40:01,055 - INFO - Episode 499/600: Total Reward: 108.4367, Steps: 255452, Act Interval: 1, LR: 0.000186 | 0.003716
+2025-04-05 01:40:01,494 - INFO - Episode 500/600: Total Reward: 101.9624, Steps: 255952, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:01,498 - INFO - Checkpoint saved at episode 500, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_500.pth
+2025-04-05 01:40:01,929 - INFO - Episode 501/600: Total Reward: 102.7715, Steps: 256452, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:02,346 - INFO - Episode 502/600: Total Reward: 106.6418, Steps: 256952, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:02,750 - INFO - Episode 503/600: Total Reward: 106.6697, Steps: 257452, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:03,157 - INFO - Episode 504/600: Total Reward: 105.8116, Steps: 257952, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:05,857 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 91.6695, Loss: actor -0.0014, critic 2.2615
+2025-04-05 01:40:06,258 - INFO - Episode 505/600: Total Reward: 104.6924, Steps: 258548, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:06,657 - INFO - Episode 506/600: Total Reward: 105.5147, Steps: 259048, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:07,083 - INFO - Episode 507/600: Total Reward: 106.6369, Steps: 259548, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:07,492 - INFO - Episode 508/600: Total Reward: 103.7289, Steps: 260048, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:07,906 - INFO - Episode 509/600: Total Reward: 106.2647, Steps: 260548, Act Interval: 1, LR: 0.000182 | 0.003642
+2025-04-05 01:40:08,318 - INFO - Episode 510/600: Total Reward: 104.1902, Steps: 261048, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:08,788 - INFO - Episode 511/600: Total Reward: 106.8854, Steps: 261548, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:09,237 - INFO - Episode 512/600: Total Reward: 103.9829, Steps: 262048, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:12,547 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 93.1346, Loss: actor -0.0033, critic 2.1626
+2025-04-05 01:40:12,975 - INFO - Episode 513/600: Total Reward: 101.5437, Steps: 262644, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:13,434 - INFO - Episode 514/600: Total Reward: 104.4263, Steps: 263144, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:13,856 - INFO - Episode 515/600: Total Reward: 102.3778, Steps: 263644, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:14,310 - INFO - Episode 516/600: Total Reward: 104.8212, Steps: 264144, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:14,786 - INFO - Episode 517/600: Total Reward: 104.6458, Steps: 264644, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:15,206 - INFO - Episode 518/600: Total Reward: 103.8256, Steps: 265144, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:15,648 - INFO - Episode 519/600: Total Reward: 101.3560, Steps: 265644, Act Interval: 1, LR: 0.000178 | 0.003569
+2025-04-05 01:40:16,106 - INFO - Episode 520/600: Total Reward: 102.5836, Steps: 266144, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:18,939 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 91.3133, Loss: actor -0.0009, critic 2.2679
+2025-04-05 01:40:19,364 - INFO - Episode 521/600: Total Reward: 105.6284, Steps: 266740, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:19,762 - INFO - Episode 522/600: Total Reward: 105.2027, Steps: 267240, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:20,204 - INFO - Episode 523/600: Total Reward: 106.9391, Steps: 267740, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:20,604 - INFO - Episode 524/600: Total Reward: 105.6291, Steps: 268240, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:21,025 - INFO - Episode 525/600: Total Reward: 104.4679, Steps: 268740, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:21,427 - INFO - Episode 526/600: Total Reward: 107.5919, Steps: 269240, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:21,824 - INFO - Episode 527/600: Total Reward: 105.6541, Steps: 269740, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:22,283 - INFO - Episode 528/600: Total Reward: 106.2360, Steps: 270240, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:25,085 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 93.6897, Loss: actor -0.0008, critic 2.2156
+2025-04-05 01:40:25,578 - INFO - Episode 529/600: Total Reward: 106.2407, Steps: 270836, Act Interval: 1, LR: 0.000175 | 0.003497
+2025-04-05 01:40:25,996 - INFO - Episode 530/600: Total Reward: 107.0828, Steps: 271336, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:26,408 - INFO - Episode 531/600: Total Reward: 109.6067, Steps: 271836, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:26,815 - INFO - Episode 532/600: Total Reward: 106.0666, Steps: 272336, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:27,300 - INFO - Episode 533/600: Total Reward: 107.6995, Steps: 272836, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:27,800 - INFO - Episode 534/600: Total Reward: 104.6222, Steps: 273336, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:28,292 - INFO - Episode 535/600: Total Reward: 107.6777, Steps: 273836, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:28,715 - INFO - Episode 536/600: Total Reward: 108.4766, Steps: 274336, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:31,765 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 94.8204, Loss: actor -0.0012, critic 2.2056
+2025-04-05 01:40:32,205 - INFO - Episode 537/600: Total Reward: 106.3618, Steps: 274932, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:32,642 - INFO - Episode 538/600: Total Reward: 106.7464, Steps: 275432, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:33,107 - INFO - Episode 539/600: Total Reward: 104.7577, Steps: 275932, Act Interval: 1, LR: 0.000171 | 0.003428
+2025-04-05 01:40:33,530 - INFO - Episode 540/600: Total Reward: 80.4997, Steps: 276432, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:34,035 - INFO - Episode 541/600: Total Reward: 108.0000, Steps: 276932, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:34,543 - INFO - Episode 542/600: Total Reward: 105.9156, Steps: 277432, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:35,049 - INFO - Episode 543/600: Total Reward: 107.9617, Steps: 277932, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:35,528 - INFO - Episode 544/600: Total Reward: 108.5830, Steps: 278432, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:38,653 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 91.6654, Loss: actor -0.0033, critic 2.3115
+2025-04-05 01:40:39,226 - INFO - Episode 545/600: Total Reward: 108.7965, Steps: 279028, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:39,699 - INFO - Episode 546/600: Total Reward: 106.2104, Steps: 279528, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:40,132 - INFO - Episode 547/600: Total Reward: 104.4145, Steps: 280028, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:40,555 - INFO - Episode 548/600: Total Reward: 108.2328, Steps: 280528, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:41,002 - INFO - Episode 549/600: Total Reward: 106.5162, Steps: 281028, Act Interval: 1, LR: 0.000168 | 0.003359
+2025-04-05 01:40:41,425 - INFO - Episode 550/600: Total Reward: 104.2711, Steps: 281528, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:41,428 - INFO - Checkpoint saved at episode 550, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_550.pth
+2025-04-05 01:40:41,843 - INFO - Episode 551/600: Total Reward: 108.6183, Steps: 282028, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:42,307 - INFO - Episode 552/600: Total Reward: 109.9150, Steps: 282528, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:45,470 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 94.7710, Loss: actor -0.0026, critic 2.2797
+2025-04-05 01:40:45,900 - INFO - Episode 553/600: Total Reward: 106.1399, Steps: 283124, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:46,295 - INFO - Episode 554/600: Total Reward: 108.0657, Steps: 283624, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:46,737 - INFO - Episode 555/600: Total Reward: 108.3565, Steps: 284124, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:47,128 - INFO - Episode 556/600: Total Reward: 107.1498, Steps: 284624, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:47,548 - INFO - Episode 557/600: Total Reward: 106.1545, Steps: 285124, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:47,971 - INFO - Episode 558/600: Total Reward: 107.2296, Steps: 285624, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:48,407 - INFO - Episode 559/600: Total Reward: 105.7128, Steps: 286124, Act Interval: 1, LR: 0.000165 | 0.003292
+2025-04-05 01:40:48,860 - INFO - Episode 560/600: Total Reward: 107.4290, Steps: 286624, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:51,954 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 94.7056, Loss: actor -0.0016, critic 2.2895
+2025-04-05 01:40:52,357 - INFO - Episode 561/600: Total Reward: 106.3676, Steps: 287220, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:52,755 - INFO - Episode 562/600: Total Reward: 105.5858, Steps: 287720, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:53,178 - INFO - Episode 563/600: Total Reward: 106.9358, Steps: 288220, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:53,628 - INFO - Episode 564/600: Total Reward: 106.6950, Steps: 288720, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:54,103 - INFO - Episode 565/600: Total Reward: 106.5006, Steps: 289220, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:54,653 - INFO - Episode 566/600: Total Reward: 108.9110, Steps: 289720, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:55,114 - INFO - Episode 567/600: Total Reward: 107.7774, Steps: 290220, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:55,668 - INFO - Episode 568/600: Total Reward: 108.4273, Steps: 290720, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:40:59,090 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 94.8359, Loss: actor -0.0021, critic 2.2427
+2025-04-05 01:40:59,583 - INFO - Episode 569/600: Total Reward: 107.1519, Steps: 291316, Act Interval: 1, LR: 0.000161 | 0.003226
+2025-04-05 01:41:00,049 - INFO - Episode 570/600: Total Reward: 108.0545, Steps: 291816, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:00,477 - INFO - Episode 571/600: Total Reward: 106.8437, Steps: 292316, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:00,920 - INFO - Episode 572/600: Total Reward: 107.1659, Steps: 292816, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:01,344 - INFO - Episode 573/600: Total Reward: 106.2735, Steps: 293316, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:01,818 - INFO - Episode 574/600: Total Reward: 107.1071, Steps: 293816, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:02,268 - INFO - Episode 575/600: Total Reward: 107.0426, Steps: 294316, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:02,687 - INFO - Episode 576/600: Total Reward: 106.5832, Steps: 294816, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:05,831 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 94.7293, Loss: actor -0.0030, critic 2.2548
+2025-04-05 01:41:06,270 - INFO - Episode 577/600: Total Reward: 106.6367, Steps: 295412, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:06,670 - INFO - Episode 578/600: Total Reward: 107.6816, Steps: 295912, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:07,075 - INFO - Episode 579/600: Total Reward: 106.8624, Steps: 296412, Act Interval: 1, LR: 0.000158 | 0.003161
+2025-04-05 01:41:07,498 - INFO - Episode 580/600: Total Reward: 106.9738, Steps: 296912, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:07,909 - INFO - Episode 581/600: Total Reward: 107.3517, Steps: 297412, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:08,303 - INFO - Episode 582/600: Total Reward: 108.1225, Steps: 297912, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:08,709 - INFO - Episode 583/600: Total Reward: 107.1043, Steps: 298412, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:09,105 - INFO - Episode 584/600: Total Reward: 107.9102, Steps: 298912, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:11,830 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 94.9800, Loss: actor -0.0035, critic 2.2333
+2025-04-05 01:41:12,230 - INFO - Episode 585/600: Total Reward: 103.7558, Steps: 299508, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:12,628 - INFO - Episode 586/600: Total Reward: 6.7765, Steps: 300008, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:13,026 - INFO - Episode 587/600: Total Reward: 6.5116, Steps: 300508, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:13,429 - INFO - Episode 588/600: Total Reward: 6.0992, Steps: 301008, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:13,841 - INFO - Episode 589/600: Total Reward: 5.1396, Steps: 301508, Act Interval: 1, LR: 0.000155 | 0.003098
+2025-04-05 01:41:14,245 - INFO - Episode 590/600: Total Reward: 5.9239, Steps: 302008, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:14,653 - INFO - Episode 591/600: Total Reward: 106.9359, Steps: 302508, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:15,107 - INFO - Episode 592/600: Total Reward: 8.1203, Steps: 303008, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:18,165 - INFO - Update after 4096 steps (9 episodes): Avg Episode Reward: 27.4570, Loss: actor -0.0156, critic 0.9706
+2025-04-05 01:41:18,610 - INFO - Episode 593/600: Total Reward: 107.0702, Steps: 303604, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:19,050 - INFO - Episode 594/600: Total Reward: 108.0001, Steps: 304104, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:19,496 - INFO - Episode 595/600: Total Reward: 107.2303, Steps: 304604, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:19,957 - INFO - Episode 596/600: Total Reward: 105.8745, Steps: 305104, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:20,477 - INFO - Episode 597/600: Total Reward: 106.6215, Steps: 305604, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:21,021 - INFO - Episode 598/600: Total Reward: 58.1331, Steps: 306104, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:21,493 - INFO - Episode 599/600: Total Reward: 8.7350, Steps: 306604, Act Interval: 1, LR: 0.000152 | 0.003036
+2025-04-05 01:41:21,923 - INFO - Episode 600/600: Total Reward: 107.6413, Steps: 307104, Act Interval: 1, LR: 0.000149 | 0.002976
+2025-04-05 01:41:21,927 - INFO - Checkpoint saved at episode 600, file: D:\Projects\RL_course\homework1\checkpoints\pendulum\ppo\Pendulum_PPO_20250405_013430\checkpoint_600.pth
+2025-04-05 01:41:24,647 - INFO - Update after 4000 steps (8 episodes): Avg Episode Reward: 88.6632, Loss: actor -0.0044, critic 2.2526
+2025-04-05 01:41:24,647 - INFO - On-policy training completed.

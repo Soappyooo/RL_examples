@@ -1,0 +1,47 @@
+env:
+  name: "Curling"
+  r: 1.0 
+  m: 1.0 
+  h: 100.0  
+  w: 100.0  
+  rebound_coefficient: 0.9 
+  initial_speed_range: [-10, 10] 
+  dt: 0.01  
+  max_steps: 3000
+  num_steps_per_step: 10
+  initial_act_interval: 1
+  act_interval_decay: 1
+  final_act_interval: 1
+  normalize: true
+
+agent:
+  name: "PPO"
+  gamma: 1
+  clip_ratio: 0.2
+  policy_lr: 0.001
+  value_lr: 0.01
+  learning_rate_decay: 0.99
+  learning_rate_min: 5.0e-6
+  learning_rate_decay_steps: 10
+  input_dim: 6  # [pos_x, pos_y, vel_x, vel_y, target_x, target_y] 
+  output_dim: 4
+  actions: [[5, 0], [0, 5], [-5, 0], [0, -5]]  # [up, right, down, left]
+  hidden_dims: [128, 128]
+  gae_lambda: 0.8
+  entropy_coef: 0.01
+  value_coef: 1
+  ppo_epochs: 10
+  mini_batch_size: 256
+  device: "cuda"
+  input_encoding: false
+  input_encoding_dim: 0
+
+training:
+  mode: "on-policy"  # "off-policy" or "on-policy"
+  seed: 1
+  num_episodes: 800
+  horizon: 8192  # Collect this many steps before updating
+  save_interval: 50
+  log_interval: 1
+  checkpoint_path: "./checkpoints/curling/ppo"
+  log_path: "./logs/curling/ppo"

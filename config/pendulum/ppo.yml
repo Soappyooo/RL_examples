@@ -1,0 +1,48 @@
+env:
+  name: "Pendulum"
+  m: 0.055
+  g: 9.81
+  l: 0.042
+  J: 1.91e-4
+  b: 3.0e-6
+  K: 0.0536
+  R: 9.5
+  max_voltage: 3
+  max_speed: 47.12388980384689
+  Ts: 0.005
+  max_steps: 500
+  initial_act_interval: 10
+  act_interval_decay: 0.993
+  final_act_interval: 1
+
+agent:
+  name: "PPO"
+  gamma: 0.98
+  clip_ratio: 0.2
+  policy_lr: 0.0005
+  value_lr: 0.01
+  learning_rate_decay: 0.98
+  learning_rate_min: 5.0e-5
+  learning_rate_decay_steps: 10
+  input_dim: 2  # pendulum state: [alpha, dot_alpha]
+  output_dim: 3
+  hidden_dims: [128, 128]
+  actions: [-3, 0, 3]  # voltage actions
+  gae_lambda: 0.95
+  entropy_coef: 0.001
+  value_coef: 1
+  ppo_epochs: 12
+  mini_batch_size: 64
+  device: "cuda"
+  input_encoding: false
+  input_encoding_dim: 0
+
+training:
+  mode: "on-policy"  # "off-policy" or "on-policy"
+  seed: 1
+  num_episodes: 600
+  horizon: 4096  # Collect this many steps before updating
+  save_interval: 50
+  log_interval: 1
+  checkpoint_path: "./checkpoints/pendulum/ppo"
+  log_path: "./logs/pendulum/ppo"
